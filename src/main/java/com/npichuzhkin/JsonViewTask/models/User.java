@@ -32,4 +32,17 @@ public class User{
         this.name = name;
         this.email = email;
     }
+
+    public User (UUID id, String name, String email){
+        this.name = name;
+        this.email = email;
+        this.id = id;
+    }
+
+    public User (UUID id, String name, String email, List<Order> orders){
+        this.name = name;
+        this.email = email;
+        this.id = id;
+        this.orders = orders;
+    }
 }
